@@ -1,0 +1,71 @@
+       .container {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 13%;
+            
+        }
+
+       .header , .my-4 {
+            text-align: center !important;
+            color:rgb(245, 242, 242);
+            margin-left: 5%;
+        }
+
+body{
+    background-color: #222831;
+}
+
+
+
+
+
+
+        div {
+            font-family: Arial;
+        }
+
+
+
+        .picture {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 25px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar2 {
+            background-color: rgb(55, 55, 55);
+            position: fixed;
+            left: 0px;
+            top: 0;
+            bottom: 0;
+            width: 150px;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+
+
+        .name {
+            color: rgb(150, 150, 150);
+            font-size: 14px;
+            
+        }
+
+        .create-new {
+            color: rgb(150, 150, 150);
+            font-size: 25px;
+            
+        }
+
+        .channel {
+            color: rgb(150, 150, 150);
+            margin-bottom: 16px;
+        }
+      .card-body{
+        background-color: #393E46;
+        color: rgb(245, 242, 242);
+        
+    }
