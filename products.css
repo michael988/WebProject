@@ -118,9 +118,10 @@ background-color: #2C74B3;
             display: flex;
             justify-content: center;
         }
-        strong{
+        .strong{
             color: black;
         }
+       
         del{
             color: red;
         }
@@ -133,5 +134,25 @@ background-color: #2C74B3;
         .img-thumbnail {
             width: 100%;
             height: auto; /* Allow the image to resize based on width */
+        }
+        .card {
+            width: 100%;
+            max-width: 250px; /* Set maximum width for large screens */
+            margin-bottom: 20px; /* Add margin between cards */
+        }
+        
+        .card-body {
+            height: 300px; /* Set a fixed height for card bodies */
+        }
+        
+        .img-thumbnail {
+            width: 100%;
+            height: 100%; /* Allow the image to resize based on width */
+            object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
         }
         
