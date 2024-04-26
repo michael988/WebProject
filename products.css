@@ -1,16 +1,20 @@
+
 body{
     font-size:25px ;
     /* background-color: #144272; */
     background-color: white;
 }
 .container-fluid {
-    padding: 30px 20px;
+    padding: 5px; 
     background-color: #0A2647;
-
 }
+
 .navbar{
     margin-top: 0px;
 }
+
+
+
 .navbar-toggler{
    background-color:  white;
 }
@@ -155,4 +159,52 @@ background-color: #2C74B3;
             display: flex;
             justify-content: center;
         }
+        .totalQuantity{
+            color: white;
+        }
         
+  .btn-primary{
+    background-color: #0A2647;
+    border: none;
+    font-size: 20px;
+  }
+  .btn-primary:hover{
+    background-color: #0A2647;
+  }
+  .white-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0%; 
+}
+
+.checkout {
+    text-align: center;
+    margin-left: 0px;
+    color: #144272;
+    background-color: white;
+    padding: 10px 10px 10px 5px;
+    border: 1px solid #144272; 
+    border-radius: 5px;
+    width: 500px;
+}
+
+/* .close {
+    margin-left: 20px;
+    color: white;
+    background-color: #144272;
+    padding: 10px 20px; 
+    border: 1px solid #144272;
+    border-radius: 5px; 
+} */
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
