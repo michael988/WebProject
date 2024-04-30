@@ -48,7 +48,7 @@ background-color: #2C74B3;
 }
 .dropdown-item:hover{
     color: black;
-    padding: 4px 16px;
+    padding: 10px 16px;
 }
 /* .btn-close{
    background-color:white;
@@ -146,7 +146,7 @@ background-color: #2C74B3;
         }
         
         .card-body {
-            height: 300px; /* Set a fixed height for card bodies */
+            height: 350px; /* Set a fixed height for card bodies */
         }
         
         .img-thumbnail {
@@ -179,13 +179,14 @@ background-color: #2C74B3;
 .buttons {
     display: flex;
     justify-content: center;
+    text-align: center;
     position: absolute;
     bottom: 0px;
     left: 0%; 
 }
 
 .checkout {
-    text-align: center;
+  
     margin-left: 0px;
     color: #144272;
     background-color: white;
@@ -208,3 +209,12 @@ a {
     text-decoration: none;
     color: inherit; 
 }
+.btn-close::after {
+    color: white;
+}
+
+.cart:hover{
+background-color: #0A2647;
+color: white;
+}
+
