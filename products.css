@@ -159,9 +159,21 @@ background-color: #2C74B3;
             display: flex;
             justify-content: center;
         }
-        .totalQuantity{
-            color: white;
+        .totalQuantity {
+            color: black;
+            background-color: white;
+            border-radius: 50%; /* Ensures it's a circle */
+            padding: 3px; /* Adjust padding if necessary */
+            width: 30px; /* Adjust width and height as needed */
+            height: 30px;
+            display: inline-block; /* Ensures it behaves like an inline element */
+            text-align: center;  
+            line-height: 20px; 
+            position: absolute;
+            /* left: 2000px; */
+            right: 5px;
         }
+        
         
   .btn-primary{
     background-color: #0A2647;
@@ -217,4 +229,3 @@ a {
 background-color: #0A2647;
 color: white;
 }
-
