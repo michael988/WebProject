@@ -16,7 +16,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-<link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="products.css">
 </head>
 
 <body>
@@ -36,7 +36,6 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <!-- active" aria-current="page" -->
                             <a class="nav-link " href="#">Home</a>
                         </li>
 
@@ -46,7 +45,7 @@
                                 Products
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="ftbl.html">Football</a></li>
+                                <li><a class="dropdown-item" href="ftbl.html">Weight Lifting</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -63,7 +62,7 @@
                                 Orders
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">New</a></li>
+                                <li><a class="dropdown-item" href="trackorder.html">Track Your Order</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -75,15 +74,12 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <!-- active" aria-current="page" -->
                             <a class="nav-link " href="#">Contact us</a>
                         </li>
                         <li class="nav-item">
-                            <!-- active" aria-current="page" -->
                             <a class="nav-link " href="#">Feedback</a>
                         </li>
                         <li class="nav-item">
-                            <!-- active" aria-current="page" -->
                             <a class="nav-link " href="#">About us</a>
                         </li>
                     </ul>
@@ -93,7 +89,7 @@
             <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                 aria-controls="offcanvasRight">
                 <div class="iconCart">
-                    <img style="height:50px;" class="white-icon" src="icon.png">
+                    <img style="height:50px;" class="white-icon" src="imagesftbl/icon.png">
                     <div class="totalQuantity">0</div>
                 </div>
             </button>
@@ -120,10 +116,10 @@
     </nav>
     <div class="container">
         <div class="row">
+            <!--   start card1  -->
             <div class="col-md-3 col-sm-6 col-12">
-                <!--  card content -->
                 <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="FOOTBALL GOAL KAGE - BLACK1.jpg" width="auto"
+                    <img class='mx-auto img-thumbnail' src="imagesftbl/FOOTBALL GOAL KAGE - BLACK1.jpg" width="auto"
                         height="auto" />
                     <div class="card-body text-center mx-auto">
                         <div class='cvp'>
@@ -134,42 +130,28 @@
                             <a href="#" class="btn details px-auto">view details</a><br />
                             <a href="#" class="btn cart px-auto"
                                 onclick="addToCart('FOOTBALL GOAL KAGE - BLACK1.jpg')">ADD TO CART</a>
-
                         </div>
                     </div>
                 </div>
-                <!-- Add more cards as needed -->
             </div>
-            <!-- <div class="col-md-3 col-sm-6 col-12">
-                <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="FOOTBALL GOAL2.webp" width="auto" height="auto" />
-                    <div class="card-body text-center mx-auto">
-                        <div class='cvp'>
-                            <h5 class="card-title font-weight-bold">FOOTBALL GOAL SG CLASSIC 500 SIZE L - NAVY/ORANGE
-                            </h5>
-                            <p class="card-text">30$</p>
-                            <a href="#" class="btn details px-auto">view details</a><br />
-                            <a href="#" class="btn cart px-auto" onclick="add()">ADD TO CART</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+            <!--   end card1  -->
+            <!--   start card2  -->
             <div class="card mx-auto col-md-3 col-10 mt-5">
-                <img class='mx-auto img-thumbnail' src="FOOTBALL GOAL2.webp" width="auto" height="auto" />
+                <img class='mx-auto img-thumbnail' src="imagesftbl/FOOTBALL GOAL2.webp" width="auto" height="auto" />
                 <div class="card-body text-center mx-auto">
                     <div class='cvp'>
                         <h5 class="card-title font-weight-bold">FOOTBALL GOAL SG CLASSIC 500 SIZE L - NAVY/ORANGE</h5>
                         <p class="card-text"><del>30$</del> <strong class="strong">20$ Sale!</strong></p>
                         <a href="#" class="btn details px-auto">view details</a><br />
                         <a href="#" class="btn cart px-auto" onclick="addToCart('FOOTBALL GOAL2.webp')">ADD TO CART</a>
-
                     </div>
                 </div>
             </div>
-
+            <!--   end card2 -->
+            <!--   start card3  -->
             <div class="col-md-3 col-sm-6 col-12">
                 <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="chabak.jpg" width="auto" height="auto" />
+                    <img class='mx-auto img-thumbnail' src="imagesftbl/chabak.jpg" width="auto" height="auto" />
                     <div class="card-body text-center mx-auto">
                         <div class='cvp'>
                             <h5 class="card-title font-weight-bold">SG 500 FOOTBALL TARGET PRACTICE BANNER SIZE M 1.80M
@@ -183,9 +165,11 @@
                     </div>
                 </div>
             </div>
+            <!--   end card3 -->
+            <!--   start card4  -->
             <div class="col-md-3 col-sm-6 col-12">
                 <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="ladder.webp" width="auto" height="auto" />
+                    <img class='mx-auto img-thumbnail' src="imagesftbl/ladder.webp" width="auto" height="auto" />
                     <div class="card-body text-center mx-auto">
                         <div class='cvp'>
                             <h5 class="card-title font-weight-bold">ESSENTIAL 3.20 M FOOTBALL AGILITY LADDER - ORANGE
@@ -198,10 +182,12 @@
                         </div>
                     </div>
                 </div>
+                <!--   end card4 -->
+                <!--   start card5 -->
             </div>
             <div class="col-md-3 col-sm-6 col-12">
                 <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="CONES.webp" width="auto" height="auto" />
+                    <img class='mx-auto img-thumbnail' src="imagesftbl/CONES.webp" width="auto" height="auto" />
                     <div class="card-body text-center mx-auto">
                         <div class='cvp'>
                             <h5 class="card-title font-weight-bold">30CM WEIGHTED TRAINING CONES 4-PACK MODULAR - ORANGE
@@ -215,9 +201,11 @@
                     </div>
                 </div>
             </div>
+            <!--   end card5 -->
+            <!--   start card6 -->
             <div class="col-md-3 col-sm-6 col-12">
                 <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="SPEED HURDLES.webp" width="auto" height="auto" />
+                    <img class='mx-auto img-thumbnail' src="imagesftbl/SPEED HURDLES.webp" width="auto" height="auto" />
                     <div class="card-body text-center mx-auto">
                         <div class='cvp'>
                             <h5 class="card-title font-weight-bold">SPEED HURDLES 3 HEIGHTS - ORANGE</h5>
@@ -231,9 +219,11 @@
                     </div>
                 </div>
             </div>
+            <!--   end card6 -->
+            <!--   start card7 -->
             <div class="col-md-3 col-sm-6 col-12">
                 <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="BAG.webp" width="auto" height="auto" />
+                    <img class='mx-auto img-thumbnail' src="imagesftbl/BAG.webp" width="auto" height="auto" />
                     <div class="card-body text-center mx-auto">
                         <div class='cvp'>
                             <h5 class="card-title font-weight-bold">8-BALL BAG-BLACK</h5>
@@ -246,9 +236,11 @@
                     </div>
                 </div>
             </div>
+            <!--   end card7 -->
+            <!--   start card8 -->
             <div class="col-md-3 col-sm-6 col-12">
                 <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="MEDIUM.webp" width="auto" height="auto" />
+                    <img class='mx-auto img-thumbnail' src="imagesftbl/MEDIUM.webp" width="auto" height="auto" />
                     <div class="card-body text-center mx-auto">
                         <div class='cvp'>
                             <h5 class="card-title font-weight-bold">MEDIUM MOVABLE STEEL FOOTBALL GOAL, ULTRAMARINE</h5>
@@ -262,21 +254,7 @@
                 </div>
             </div>
         </div>
-        <script>
-            function addToCart(imageSrc) {
-                var totalQuantity = document.getElementsByClassName('totalQuantity')[0];
-                var currentQuantity = parseInt(totalQuantity.innerText);
-                totalQuantity.innerText = currentQuantity + 1;
-
-                var img = document.createElement('img');
-                img.src = imageSrc;
-                img.style.width = '90px';
-
-                var offcanvasBody = document.querySelector('#offcanvasRight .offcanvas-body');
-                offcanvasBody.appendChild(img);
-            }
-
-        </script>
+        <script src="products.js"></script>
 </body>
 
 </html>
