@@ -1,13 +1,62 @@
-
 body{
-    font-size:25px ;
-    /* background-color: #144272; */
-    background-color: white;
+    background-color: #F9F7F7;
 }
-.container-fluid {
-    padding: 5px; 
-    background-color: #0A2647;
+.container-fluid{
+    background-color: #112D4E;
+    color:  #F9F7F7;
+  padding: 10px 10px;
 }
+.navbar{
+    margin-top: 0px;
+}
+
+
+.navbar-brand,.nav-link{
+    color:#F9F7F7;
+    font-size: 20px;
+}
+.navbar-brand:hover,.nav-link:hover{
+    color:#F9F7F7;
+}
+
+.btn-primary {
+    background-color: #112D4E;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: #112D4E;
+    color: white;
+}
+.d-flex{
+    margin-right:220px ;
+}
+.navbar form .form-control {
+    color: black; 
+}
+.btn-outline-success:hover{
+    background-color: #3F72AF;
+    border-color:#DBE2EF
+}
+.btn-outline-success:active{
+    background-color: #3F72AF;
+    border-color:#DBE2EF
+}
+.btn-outline-success{
+    border-color:#DBE2EF ;
+    color: #DBE2EF;
+}
+/* 
+ */
+ /*  */
+ /*  */
+ /*  */
+ /*  */
+ /*  */
+ /*  */
+ 
 
 .navbar{
     margin-top: 0px;
@@ -18,41 +67,7 @@ body{
 .navbar-toggler{
    background-color:  white;
 }
-.offcanvas-header{
-    background-color: #0A2647 ;
-    color: white;
-    font-size:25px ;
-}
-.offcanvas-body{
-    background-color: #144272 ;
-    font-size:25px ;
-}
 
-.nav-link {
-    color: white;
-}
-.nav-link:hover {
-    color:#0A2647;
-}
-.nav-link active{
-    color: white;
-}
-.dropdown-menu{
-background-color: #2C74B3;
-}
-.navbar-nav .nav-link.show{
-    color: white;
-}
-.dropdown-item{
-    color: white;
-}
-.dropdown-item:hover{
-    color: black;
-    padding: 10px 16px;
-}
-/* .btn-close{
-   background-color:white;
-} */
 .cart-icon {
     color: white;
 }
@@ -66,12 +81,9 @@ background-color: #2C74B3;
 .fa-shopping-cart{
     padding-right: 20px;
 }
-/*  */
-/* body{
-    background:#E0E0E0;
-} */
+
 .container{
-    margin-top: 120px;
+    margin-top:20px;
 }
 .details {
             border: 1.5px solid #2C74B3;
@@ -82,7 +94,7 @@ background-color: #2C74B3;
         }
 
         .cart {
-            background-color: #0A2647;
+            background-color: #112D4E;
             color: white;
             margin-top: 10px;
             font-size: 12px;
@@ -131,28 +143,28 @@ background-color: #2C74B3;
         }
         .card {
             width: 100%;
-            max-width: 250px; /* Set maximum width for large screens */
-            margin-bottom: 20px; /* Add margin between cards */
+            max-width: 250px; 
+            margin-bottom: 20px; 
         }
         
         .img-thumbnail {
             width: 100%;
-            height: auto; /* Allow the image to resize based on width */
+            height: auto; 
         }
         .card {
             width: 100%;
-            max-width: 250px; /* Set maximum width for large screens */
-            margin-bottom: 20px; /* Add margin between cards */
+            max-width: 250px; 
+            margin-bottom: 20px; 
         }
         
         .card-body {
-            height: 350px; /* Set a fixed height for card bodies */
+            height: 350px; 
         }
         
         .img-thumbnail {
             width: 100%;
-            height: 100%; /* Allow the image to resize based on width */
-            object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+            height: 100%; 
+            object-fit: cover;
         }
         
         .container {
@@ -162,29 +174,32 @@ background-color: #2C74B3;
         .totalQuantity {
             color: black;
             background-color: white;
-            border-radius: 50%; /* Ensures it's a circle */
-            padding: 3px; /* Adjust padding if necessary */
-            width: 30px; /* Adjust width and height as needed */
+            border-radius: 50%;
+            padding: 3px; 
+            width: 30px; 
             height: 30px;
-            display: inline-block; /* Ensures it behaves like an inline element */
+            display: inline-block; 
             text-align: center;  
             line-height: 20px; 
             position: absolute;
-            /* left: 2000px; */
-            right: 5px;
+            right: 2px;
         }
         
+        .iconCart {
+            position: relative;
+            display: inline-block;
+        }
         
-  .btn-primary{
-    background-color: #0A2647;
-    border: none;
-    font-size: 20px;
-  }
-  .btn-primary:hover{
-    background-color: #0A2647;
-  }
+     
+        .offcanvas-header{
+            background-color: #112D4E;
+            color: white;
+        }
+
+  
   .white-icon {
     filter: brightness(0) invert(1);
+    margin-right: 15px;
 }
 
 
@@ -200,22 +215,16 @@ background-color: #2C74B3;
 .checkout {
   
     margin-left: 0px;
-    color: #144272;
-    background-color: white;
+    color:  #F9F7F7;
+    background-color: #112D4E;
     padding: 10px 10px 10px 5px;
     border: 1px solid #144272; 
-    border-radius: 5px;
     width: 500px;
 }
+.btn-primary:active{
+    background-color: #0A2647;
+}
 
-/* .close {
-    margin-left: 20px;
-    color: white;
-    background-color: #144272;
-    padding: 10px 20px; 
-    border: 1px solid #144272;
-    border-radius: 5px; 
-} */
 
 a {
     text-decoration: none;
@@ -229,3 +238,12 @@ a {
 background-color: #0A2647;
 color: white;
 }
+
+.offcanvas {
+    transition: transform 0.4s ease-in-out;
+}
+
+
+.card-text{
+    font-size:25px ;
+}s
