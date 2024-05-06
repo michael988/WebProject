@@ -15,7 +15,7 @@
   }
   
   .header {
-    background: #ff523b;
+    background: #112d4e;
     padding: 20px 0;
   }
   
@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #fff;
+    color: #555;
     background-color: #F9F7F7;
     padding: 10px 20px;
   }
@@ -43,7 +43,7 @@
   }
   
   .navbar ul li a {
-    color: #fff;
+    color: #555;
     text-decoration: none;
   }
   
@@ -73,4 +73,42 @@
   img {
     max-width: 100%;
     height: auto;
+  }
+
+ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links ul {
+    list-style-type: none;
+  }
+  
+ .social-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+ .social-links ul li a {
+    color: #555;
+    text-decoration: none;
+    text-decoration: none;
+  }
+  
+  .social-links ul li a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    position: relative;
+  }
+  
+  .phone-number {
+    font-size: 30px;
+    color: #555;
   }
