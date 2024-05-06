@@ -1,85 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/abouts/about-1/assets/css/about-1.css" />
-    <link rel="stylesheet" href="about.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FITEQUIP - About</title>
+  <link rel="stylesheet" href="home.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-5O7RrbdOgm6lQjz+mZ4i9Wr6xVXBDZQWYn3W0cJ5eXN7H3jukE6D9Ih1N4Mr/2gR4Qqd3HAPHET2y3E4E3fJ7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <section id="about" class="py-5 bg-light">
-        <div class="containerr">
-            <h2 class="text-center mb-4">About FitEquip</h2>
-
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="Name">
+          FitEquip
         </div>
-    </section>
-    <!-- About 1 - Bootstrap Brain Component -->
-    <section class="py-3 py-md-5 py-xl-8">
-        <div class="container">
-            <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-                <div class="col-12 col-lg-6 col-xl-5">
-                    <img class="img-fluid rounded" loading="lazy" src="./assets/img/about-img-1.jpg" alt="">
-                </div>
-                <div class="col-12 col-lg-6 col-xl-7">
-                    <div class="row justify-content-xl-center">
-                        <div class="col-12 col-xl-11">
-                            <h2 class="h1 mb-3">Who Are We?</h2>
-                            <p class="lead fs-4 text-secondary mb-3">FitEquip has been a leading provider of quality
-                                fitness equipment since 1999. Our
-                                extensive range of products is designed to meet the needs of both home enthusiasts and
-                                professional gyms.</p>
-                            <p class="mb-5">Committed to promoting a healthy lifestyle, we offer equipment that is
-                                durable, reliable, and
-                                state-of-the-art. Our knowledgeable staff is always ready to help you find the perfect
-                                fit for
-                                your fitness goals.</p>
-                            <div class="row gy-4 gy-md-0 gx-xxl-5X">
-                                <div class="col-12 col-md-6">
-                                    <div class="d-flex">
-                                        <div class="me-4 text-primary">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                                fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h4 class="mb-3">Versatile Brand</h4>
-                                            <p class="text-secondary mb-0">We are crafting a digital method that
-                                                subsists life across all mediums.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="d-flex">
-                                        <div class="me-4 text-primary">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                                fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h4 class="mb-3">Digital Agency</h4>
-                                            <p class="text-secondary mb-0">We believe in innovation by merging primary
-                                                with elaborate ideas.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <h1>About Us</h1>
+          <p>Welcome to FitEquip, your one-stop destination for all your fitness equipment needs. We are dedicated to providing high-quality exercise equipment to help you achieve your fitness goals.</p>
+          <p>With a wide range of products including cardio machines, strength training equipment, and accessories, we cater to fitness enthusiasts of all levels and interests.</p>
+          <p>Our mission is to make fitness accessible and enjoyable for everyone. We believe that a healthy lifestyle should be convenient and inspiring, and that's why we strive to offer top-notch equipment that delivers performance, durability, and innovation.</p>
+          <p>Explore our website to discover the latest fitness equipment trends, expert tips, and personalized recommendations. Start your fitness journey with FitEquip today!</p>
         </div>
-    </section>
-
+        <div class="col-2">
+          <img src="about-image.jpg" alt="About Image">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-facebook"></i>facebook</i></a> <br>
+        <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a> <br>
+        <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
+      </div>
+    </div>
+  </footer>
+  
 </body>
-
 </html>
