@@ -1,0 +1,150 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+
+}
+
+
+#signh1{
+    width: 550px;
+    border-bottom:4px solid white ;
+}
+.signup-container {
+    background: #373A40;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.signup-container {
+    padding: 20px;
+    border-radius: 10px;
+    width: 900px;
+}
+
+.container-signin {
+    display: flex;
+}
+
+.signup-container h1 {
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-primary-register {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #DC5F00;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+
+.signup-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.signup-footer a {
+    color: #686D76;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 600px) {
+    .signup-container {
+        padding: 20px;
+    }
+
+    .signup-container h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .form-input {
+        margin-bottom: 15px;
+    }
+
+    .btn-primary-register {
+        font-size: 14px;
+    }
+}
+
+/*  */
+/*  */
+
+.signup-container h1 {
+    text-align: center;
+    /* Center the heading */
+}
+
+
+.left-side {
+    border-right: 3px solid #fff;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+/* Other styles remain unchanged */
+.container-signin {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center items horizontally */
+}
+
+.left-side,
+.right-side {
+    flex: 1; /* Take up equal space */
+    max-width: 300px; /* Limit maximum width of each column */
+    margin: 0 10px; /* Add margin for spacing between columns */
+}
+
+.form-input {
+    width: 100%; /* Set input width to 100% */
+}
+
+/* Adjust column layout for smaller screens */
+@media only screen and (max-width: 600px) {
+   .container-signin {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+.form-input{
+    width: 100%;
+}
+.signup-container{
+    max-width:500px;
+}
+.left-side > .form-input {
+    border: none;
+    width: 107%;
+    border-right:none;
+}
+.left-side {
+    border-right:none;
+}
+  }
