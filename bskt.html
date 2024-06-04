@@ -4,270 +4,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basketball</title>
+    <title>FitEquip-Basketball</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitEquip</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha384-UFJRYtjY5gSWRNtEUKMxi1CqrXzJY3PU+OH+3B6oNXWhXYH1xCdvMgApZdVvgOU2" crossorigin="anonymous">
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="products.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMg4f7+J3pbmOW5Zn1gDyD32dS5abyl3v9X+ZOn" crossorigin="anonymous">
+
+    <!-- bto code -->
+    <script src="https://kit.fontawesome.com/3c7268061e.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="product.css">
 </head>
 
 <body>
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <h5 style="color: #686D76;font-size: 30px;">FitEquip</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Offcanvas navbar -->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Side Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Home</a>
-                        </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="#">Weight Lifting</a></li>
+                            <li><a class="dropdown-item" href="#">Football</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+                        <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Log In</a></li>
+                            <li><a class="dropdown-item" href="#">Sign In</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="fas fa-shopping-cart" style="color: #DC5F00;font-size: 30px;"></i></a>
+                    </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Products
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="ftbl.html">Weight Lifting</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="bskt.html">Football</a></li>
-                                <!-- <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Orders
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="trackorder.html">Track Your Order</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Shipped</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Returned</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Contact us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Feedback</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">About us</a>
-                        </li>
-                    </ul>
-
-                </div>
+                </ul>
             </div>
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight">
-                <div class="iconCart">
-                    <img style="height:50px;" class="white-icon" src="imagesftbl/icon.png">
-                    <div class="totalQuantity">0</div>
-                </div>
-            </button>
+        </nav>
+    </div>
 
 
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Card</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="buttons">
-                        <a href="checkout.html">
-                            <div class="checkout">
-                                CHECKOUT
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <!--  -->
 
 
-        </div>
-    </nav>
-    <div class="container">
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
         <div class="row">
-            <!--   start card1  -->
-            <div class="col-md-3 col-sm-6 col-12">
-                <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="imagesbskt/BASKETBALL  ORANGE..webp" width="auto"
-                        height="auto" />
-                    <div class="card-body text-center mx-auto">
-                        <div class='cvp'>
-                            <h5 class="card-title font-weight-bold">KIDS'/ADULT SIZE 7 BASKETBALL R100 - ORANGE.</h5>
-                            <strong>
-                                <p class="card-text">10$</p>
-                            </strong>
-                            <a href="#" class="btn details px-auto">view details</a><br />
-                            <a href="#" class="btn cart px-auto"
-                                onclick="addToCart('imagesbskt/BASKETBALL  ORANGE..webp')">ADD TO CART</a>
-                        </div>
+            <div class="col-4">
+                <img src="imagesbskt/30CM TRAINING CONES.webp" alt="..." />
+                <h4>KIPSTA 30CM TRAINING CONES 4-PACK ESSENTIAL - ORANGE</h4>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="far fa-star" data-index="1"></i>
+                        <i class="far fa-star" data-index="2"></i>
+                        <i class="far fa-star" data-index="3"></i>
+                        <i class="far fa-star" data-index="4"></i>
+                        <i class="far fa-star" data-index="5"></i>
                     </div>
                 </div>
+                <p class="price">10.00$</p>
+                <a href="./checkout/checkout.htmll" class="buybtn">Buy Now</a>
+                <a href="details.php?product_id=1" class="viewdetailsbtn">View Details</a>
             </div>
-            <!--   end card1  -->
-            <!--   start card2  -->
-            <div class="card mx-auto col-md-3 col-10 mt-5">
-                <img class='mx-auto img-thumbnail' style="object-fit: contain;" src="imagesbskt/MINI BASKETBALL.webp"
-                    width="auto" height="auto" />
-                <div class="card-body text-center mx-auto">
-                    <div class='cvp'>
-                        <h5 class="card-title font-weight-bold">KIDS' SIZE 1 MINI BASKETBALL K100 RUBBER - BLUE/ORANGE
-                        </h5>
-                        <p class="card-text"><del>20$</del> <strong class="strong">10$ Sale!</strong></p>
-                        <a href="#" class="btn details px-auto">view details</a><br />
-                        <a href="#" class="btn cart px-auto" onclick="addToCart('FOOTBALL GOAL2.webp')">ADD TO CART</a>
-                    </div>
-                </div>
-            </div>
-            <!--   end card2 -->
-            <!--   start card3  -->
-            <div class="col-md-3 col-sm-6 col-12">
-                <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="imagesbskt/BASKETBALL HOOP.webp" width="auto"
-                        height="auto" />
-                    <div class="card-body text-center mx-auto">
-                        <div class='cvp'>
-                            <h5 class="card-title font-weight-bold">BASKETBALL HOOP WITH ADJUSTABLE STAND (FROM 2.20 TO
-                                3.05M) B100 EASY - BLACK</h5>
-                            <strong>
-                                <p class="card-text">230$</p>
-                            </strong>
-                            <a href="#" class="btn details px-auto">view details</a><br />
-                            <a href="#" class="btn cart px-auto" onclick="addToCart('chabak.jpg')">ADD TO CART</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--   end card3 -->
-            <!--   start card4  -->
-            <div class="col-md-3 col-sm-6 col-12">
-                <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="imagesbskt/WALL.webp" width="auto" height="auto" />
-                    <div class="card-body text-center mx-auto">
-                        <div class='cvp'>
-                            <h5 class="card-title font-weight-bold">KIDS'/ADULT WALL-MOUNTED BASKETBALL HOOP SB100 -
-                                BLACK/RED.
-                            </h5>
-                            <strong>
-                                <p class="card-text">90$</p>
-                            </strong>
-                            <a href="#" class="btn details px-auto">view details</a><br />
-                            <a href="#" class="btn cart px-auto" onclick="addToCart('ladder.webp')">ADD TO CART</a>
-                        </div>
-                    </div>
-                </div>
-                <!--   end card4 -->
-                <!--   start card5 -->
-            </div>
-            <div class="col-md-3 col-sm-6 col-12">
-                <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="imagesbskt/NET.webp" width="auto" height="auto" />
-                    <div class="card-body text-center mx-auto">
-                        <div class='cvp'>
-                            <h5 class="card-title font-weight-bold"> 6MM HOOP OR BACKBOARD BASKETBALL NET - WHITE.
-                                RESISTANT TO BAD WEATHER.
-                            </h5>
-                            <strong>
-                                <p class="card-text">8$</p>
-                            </strong>
-                            <a href="#" class="btn details px-auto">view details</a><br />
-                            <a href="#" class="btn cart px-auto" onclick="addToCart('CONES.webp')">ADD TO CART</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--   end card5 -->
-            <!--   start card6 -->
-            <div class="col-md-3 col-sm-6 col-12">
-                <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="imagesbskt/ELBOW.webp" width="auto" height="auto" />
-                    <div class="card-body text-center mx-auto">
-                        <div class='cvp'>
-                            <h5 class="card-title font-weight-bold">SOFT 300 RIGHT/LEFT MEN'S/WOMEN'S ELBOW SUPPORT -
-                                BLACK</h5>
-                            <strong>
-                                <p class="card-text">9$</p>
-                            </strong>
-                            <a href="#" class="btn details px-auto">view details</a><br />
-                            <a href="#" class="btn cart px-auto" onclick="addToCart('SPEED HURDLES.webp')">ADD TO
-                                CART</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--   end card6 -->
-            <!--   start card7 -->
-            <div class="col-md-3 col-sm-6 col-12">
-                <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="imagesbskt/SHOES.webp" width="auto" height="auto" />
-                    <div class="card-body text-center mx-auto">
-                        <div class='cvp'>
-                            <h5 class="card-title font-weight-bold">MEN'S/WOMEN'S BEGINNER BASKETBALL SHOES PROTECT 120
-                                - BLACK/RED</h5>
-                            <strong>
-                                <p class="card-text">40$</p>
-                            </strong>
-                            <a href="#" class="btn details px-auto">view details</a><br />
-                            <a href="#" class="btn cart px-auto" onclick="addToCart('BAG.webp')">ADD TO CART</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--   end card7 -->
-            <!--   start card8 -->
-            <div class="col-md-3 col-sm-6 col-12">
-                <div class="card mx-auto col-md-3 col-10 mt-5">
-                    <img class='mx-auto img-thumbnail' src="imagesbskt/30CM TRAINING CONES.webp" width="auto"
-                        height="auto" />
-                    <div class="card-body text-center mx-auto">
-                        <div class='cvp'>
-                            <h5 class="card-title font-weight-bold">
-                                KIPSTA
 
-                                30CM TRAINING CONES 4-PACK ESSENTIAL - ORANGE</h5>
-                            <strong>
-                                <p class="card-text">10$</p>
-                            </strong>
-                            <a href="#" class="btn details px-auto">view details</a><br />
-                            <a href="#" class="btn cart px-auto" onclick="addToCart('MEDIUM.webp')">ADD TO CART</a>
-                        </div>
+
+            <div class="col-4">
+                <img src="imagesbskt/BASKETBALL  ORANGE..webp" alt="..." />
+                <h4>KIDS'/ADULT SIZE 7 BASKETBALL R100 - ORANGE.</h4>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="far fa-star" data-index="1"></i>
+                        <i class="far fa-star" data-index="2"></i>
+                        <i class="far fa-star" data-index="3"></i>
+                        <i class="far fa-star" data-index="4"></i>
+                        <i class="far fa-star" data-index="5"></i>
                     </div>
+                </div>
+                <p class="price">10.00$</p>
+                <a href="./checkout/checkout.htmll" class="buybtn">Add To Cart</a>
+                <a href="details.php?product_id=2" class="viewdetailsbtn">View Details</a>
+            </div>
+
+
+            <div class="col-4">
+                <img src="imagesbskt/BASKETBALL HOOP.webp" alt="..." />
+                <h4>BASKETBALL HOOP WITH ADJUSTABLE STAND (FROM 2.20 TO 3.05M) B100 EASY - BLACK</h4>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="far fa-star" data-index="1"></i>
+                        <i class="far fa-star" data-index="2"></i>
+                        <i class="far fa-star" data-index="3"></i>
+                        <i class="far fa-star" data-index="4"></i>
+                        <i class="far fa-star" data-index="5"></i>
+                    </div>
+                </div>
+                <p class="price">290.00$</p>
+                <a href="./checkout/checkout.htmll" class="buybtn">Add To Cart</a>
+                <a href="details.php?product_id=3" class="viewdetailsbtn">View Details</a>
+            </div>
+
+
+            <div class="col-4">
+                <img src="imagesbskt/ELBOW.webp" alt="..." />
+                <h4>SOFT 300 RIGHT/LEFT MEN'S/WOMEN'S ELBOW SUPPORT - BLACK
+                </h4>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="far fa-star" data-index="1"></i>
+                        <i class="far fa-star" data-index="2"></i>
+                        <i class="far fa-star" data-index="3"></i>
+                        <i class="far fa-star" data-index="4"></i>
+                        <i class="far fa-star" data-index="5"></i>
+                    </div>
+                </div>
+                <p class="price">9.00$</p>
+                <a href="./checkout/checkout.htmll" class="buybtn">Add To Cart</a>
+                <a href="details.php?product_id=4" class="viewdetailsbtn">View Details</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="imagesbskt/basketballr5001.webp" alt="..." />
+                <h4>SIZE 7 BASKETBALL R500 - BLACK/RED/BLUE</h4>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="far fa-star" data-index="1"></i>
+                        <i class="far fa-star" data-index="2"></i>
+                        <i class="far fa-star" data-index="3"></i>
+                        <i class="far fa-star" data-index="4"></i>
+                        <i class="far fa-star" data-index="5"></i>
+                    </div>
+                </div>
+                <p class="price">20.00$</p>
+                <a href="./checkout/checkout.htmll" class="buybtn">Add To Cart</a>
+                <a href="details.php?product_id=5" class="viewdetailsbtn">View Details</a>
+            </div>
+
+
+            <div class="col-4">
+                <img src="imagesbskt/NET.webp" alt="..." />
+                <h4>6MM HOOP OR BACKBOARD BASKETBALL NET - WHITE. RESISTANT TO BAD WEATHER.</h4>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="far fa-star" data-index="1"></i>
+                        <i class="far fa-star" data-index="2"></i>
+                        <i class="far fa-star" data-index="3"></i>
+                        <i class="far fa-star" data-index="4"></i>
+                        <i class="far fa-star" data-index="5"></i>
+                    </div>
+                </div>
+                <p class="price">8.00$</p>
+                <a href="./checkout/checkout.htmll" class="buybtn">Add To Cart</a>
+                <a href="details.php?product_id=6" class="viewdetailsbtn">View Details</a>
+            </div>
+
+
+            <div class="col-4">
+                <img src="imagesbskt/SHOES.webp" alt="..." />
+                <h4>MEN'S/WOMEN'S BEGINNER BASKETBALL SHOES PROTECT 120 - BLACK/RED</h4>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="far fa-star" data-index="1"></i>
+                        <i class="far fa-star" data-index="2"></i>
+                        <i class="far fa-star" data-index="3"></i>
+                        <i class="far fa-star" data-index="4"></i>
+                        <i class="far fa-star" data-index="5"></i>
+                    </div>
+                </div>
+                <p class="price">40.00$</p>
+                <a href="./checkout/checkout.htmll" class="buybtn">Add To Cart</a>
+                <a href="details.php?product_id=7" class="viewdetailsbtn">View Details</a>
+            </div>
+
+
+            <div class="col-4">
+                <img src="imagesbskt/mounted1.webp" alt="..." />
+                <h4>KIDS' WALL-MOUNTED POLYCARBONATE BASKETBALL HOOP S500</h4>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="far fa-star" data-index="1"></i>
+                        <i class="far fa-star" data-index="2"></i>
+                        <i class="far fa-star" data-index="3"></i>
+                        <i class="far fa-star" data-index="4"></i>
+                        <i class="far fa-star" data-index="5"></i>
+                    </div>
+                </div>
+                <p class="price">20.00$</p>
+                <a href="./checkout/checkout.htmll" class="buybtn">Add To Cart</a>
+                <a href="details.php?product_id=8" class="viewdetailsbtn">View Details</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <h4 id="footh4">FitEquip</h4>
+                    <p style="color: #DC5F00;">Our Purpose Is To Sustainably Make The Pleasure and Benefits of Sports
+                        Accessible to the
+                        Many.</p>
+                </div>
+                <div class="footer-col-4">
+                    <h3 style="color:#EEEEEE">Follow us</h3>
+                    <ul style="color: #DC5F00;">
+                        <li style="color: #DC5F00;"><i class="fab fa-facebook"></i> Facebook</li>
+                        <li style="color: #DC5F00;"></li> <i class="fab fa-twitter"></i> Twitter</li>
+                        <li style="color: #DC5F00;"></li> <i class="fab fa-instagram"></i> Instagram</li>
+                        <li style="color: #DC5F00;"></li><i class="fab fa-youtube"></i> YouTube</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <script src="products.js"></script>
+    </div>
+
+    <script>
+        // JavaScript
+        document.addEventListener('DOMContentLoaded', function () {
+            const stars = document.querySelectorAll('.stars');
+
+            stars.forEach(starSet => {
+                starSet.addEventListener('click', event => {
+                    const starClicked = event.target;
+                    const starIndex = parseInt(starClicked.getAttribute('data-index'));
+
+                    // Set the rating based on the clicked star index
+                    for (let i = 0; i < 5; i++) {
+                        if (i < starIndex) {
+                            starSet.children[i].classList.remove('far');
+                            starSet.children[i].classList.add('fas');
+                        } else {
+                            starSet.children[i].classList.remove('fas');
+                            starSet.children[i].classList.add('far');
+                        }
+                    }
+                });
+            });
+        });
+
+
+    </script>
 </body>
 
 </html>
